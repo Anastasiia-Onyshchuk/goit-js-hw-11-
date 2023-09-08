@@ -95,10 +95,15 @@ img {
     margin-top: 0;
     border-radius: 0px;
 }
-
+/* .stylisation {
+    position: absolute;
+} */
 .load-more {
     display: none;
+    position: relative;
+    bottom: -3600px;
     margin: 20px auto;
+    margin-bottom: 20px;
     padding: 10px 20px;
     background-color: #4862BC;
     color: white;
@@ -106,6 +111,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 .info {
     display: flex;
