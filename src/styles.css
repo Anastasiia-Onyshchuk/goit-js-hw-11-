@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+* ::before,
+* ::after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #4862BC;
+    height: 4rem;
+
+}
+
+.coontainer {
+    max-width: 1600px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
+    width: inherit;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.search-form input {
+    padding: 10px;
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.search-btn {
+    padding: inherit;
+    height: 40px;
+    background-color: rgb(176, 178, 182);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+    /* position: relative;
+    right: -100;
+    top: 0; */
+
+}
+
+
+.gallery {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    position: absolute;
+    padding: 10px;
+
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+
+    /* width: 300px; */
+    /* flex-basis: calc((100% - 5 * 10px) / 4); */
+    /* margin: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 0.1875rem;
+
+    text-align: center;
+    position: relative;
+    min-height: 60%;
+
+    width: calc((100% - 50px) / 4);
+    margin-bottom: 10px;
+}
+
+
+img {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: auto;
+    margin-top: 0;
+    border-radius: 0px;
+}
+
+.load-more {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4862BC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow: scroll;
+    padding-left: 2px;
+    padding-right: 2px;
+}
