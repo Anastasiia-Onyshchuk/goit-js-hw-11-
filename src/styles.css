@@ -53,10 +53,6 @@ header {
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     cursor: pointer;
-    /* position: relative;
-    right: -100;
-    top: 0; */
-
 }
 
 
@@ -77,10 +73,6 @@ header {
     justify-content: space-between;
     position: relative;
     top: 0;
-
-    /* width: 300px; */
-    /* flex-basis: calc((100% - 5 * 10px) / 4); */
-    /* margin: 10px; */
     border: 1px solid #ccc;
     border-radius: 0.1875rem;
 
