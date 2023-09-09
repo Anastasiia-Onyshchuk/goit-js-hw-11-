@@ -19,7 +19,7 @@ header {
 
 }
 
-.coontainer {
+.container {
     max-width: 1600px;
 }
 
@@ -61,9 +61,9 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     position: absolute;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -95,9 +95,7 @@ img {
     margin-top: 0;
     border-radius: 0px;
 }
-/* .stylisation {
-    position: absolute;
-} */
+
 .load-more {
     display: none;
     position: relative;
@@ -111,7 +109,6 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
-
 
 .info {
     display: flex;
