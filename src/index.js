@@ -6,6 +6,7 @@ import { fetchImages } from './api';
 
 const searchForm = document.getElementById('search-form');
 
+
 const loadMoreBtn = document.querySelector('.load-more');
 Notiflix.Notify.init({
   position: 'right-top',

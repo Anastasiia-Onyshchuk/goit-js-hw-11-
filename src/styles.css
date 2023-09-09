@@ -16,6 +16,9 @@ body {
 header {
     background-color: #4862BC;
     height: 4rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 
 }
 
@@ -56,6 +59,7 @@ header {
 }
 
 
+
 .gallery {
 
     display: flex;
@@ -64,6 +68,7 @@ header {
     /* margin-top: 5px; */
     position: absolute;
     padding: 20px;
+    max-width: 1600px;
 
 }
 
@@ -96,10 +101,11 @@ img {
     border-radius: 0px;
 }
 
+
 .load-more {
     display: none;
     position: relative;
-    bottom: -3600px;
+    /* bottom: -3600px; */
     margin: 20px auto;
     margin-bottom: 20px;
     padding: 10px 20px;
