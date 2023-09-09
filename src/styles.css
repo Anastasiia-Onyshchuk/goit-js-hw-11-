@@ -124,8 +124,11 @@ img {
 .info {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
     overflow: scroll;
     padding-left: 2px;
     padding-right: 2px;
+}
+.info-item{
+    font-size: 12px;
 }
