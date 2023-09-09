@@ -29,7 +29,14 @@ header {
 .container {
     max-width: 1600px;
 }
-
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 100px; */
+    position: absolute;
+}
 .search-form {
     display: flex;
     justify-content: center;
@@ -69,11 +76,9 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: absolute;
+    /* position: absolute; */
     padding: 20px;
     max-width: 1600px;
-    margin-top: 100px;
-    
 
 }
 
@@ -110,8 +115,6 @@ img {
 .load-more {
     display: none;
     position: relative;
-    /* bottom: -3600px; */
-    margin: 20px auto;
     margin-bottom: 20px;
     padding: 10px 20px;
     background-color: #4862BC;

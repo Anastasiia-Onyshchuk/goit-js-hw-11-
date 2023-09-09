@@ -32,7 +32,7 @@ function renderImages(images) {
       `;
     })
     .join('');
-  gallery.innerHTML = markup;
+    gallery.insertAdjacentHTML("beforeend", markup)
   if (totalHits > currentPage * 40) {
     loadMoreBtn.style.display = 'block';
   } else {
