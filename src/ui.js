@@ -10,6 +10,7 @@ const searchForm = document.getElementById('search-form');
 
 loadMoreBtn.style.display = "none";
 let currentPage = 1;
+let currentQuery = '';
 let totalHits = 0;
 
 function renderImages(images) {
