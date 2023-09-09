@@ -16,9 +16,6 @@ body {
 header {
     background-color: #4862BC;
     height: 4rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,13 +31,11 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* gap: 100px; */
     position: absolute;
 }
 .search-form {
     display: flex;
     justify-content: center;
-    /* position: fixed; */
     width: inherit;
     text-align: center;
     padding: 10px;

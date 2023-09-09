@@ -56,6 +56,7 @@ async function loadImages(query, page) {
       loadMoreBtn.style.display = 'block';
   }
 }
+
 const searchBtn = document.querySelector('.search-btn');
 searchBtn.addEventListener('click', async function () {
   const searchQuery = searchForm.searchQuery.value.trim();
@@ -63,11 +64,8 @@ searchBtn.addEventListener('click', async function () {
   currentPage = 1;
   currentQuery = searchQuery;
   const data = await fetchImages(searchQuery, currentPage);
-  if (data.hits.length === 0) {
-    Notify.failure("Sorry, there are no images matching your search query. Please try again.");
-  } else {
-    totalHits = data.totalHits;
+
+     totalHits = data.totalHits;
     renderImages(data.hits);
-  }
 });
 export { renderImages, showMessage, loadImages };
