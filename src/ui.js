@@ -9,9 +9,9 @@ const loadMoreBtn = document.querySelector('.load-more');
 const searchForm = document.getElementById('search-form');
 
 loadMoreBtn.style.display = "none";
-let currentPage = 1;
-let currentQuery = '';
-let totalHits = 0;
+// let currentPage = 1;
+// let currentQuery = '';
+// let totalHits = 0;
 
 function renderImages(images) {
 
@@ -52,6 +52,7 @@ async function loadImages(query, page) {
     loadMoreBtn.style.display = 'none';
     showMessage("We're sorry, but you've reached the end of search results.");
   } else {
+      totalHits = data.totalHits;
       renderImages(data.hits);
       loadMoreBtn.style.display = 'block';
   }
@@ -63,8 +64,8 @@ searchBtn.addEventListener('click', async function () {
   if (!searchQuery) return;
   currentPage = 1;
   currentQuery = searchQuery;
-//   const data = await fetchImages(searchQuery, currentPage);
-    //  totalHits = data.totalHits;
-    // renderImages(data.hits);
+  const data = await fetchImages(searchQuery, currentPage);
+totalHits = data.totalHits;
+    renderImages(data.hits);
 });
 export { renderImages, showMessage, loadImages };
