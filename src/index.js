@@ -13,9 +13,9 @@ Notiflix.Notify.init({
   timeout: 3000,
 });
 // const lightbox = new SimpleLightbox('.gallery a');
-let currentPage = 1;
-let currentQuery = '';
-let totalHits = 0;
+// let currentPage = 1;
+// let currentQuery = '';
+// let totalHits = 0;
 
 
 searchForm.addEventListener('submit', async function (e) {
@@ -26,7 +26,7 @@ searchForm.addEventListener('submit', async function (e) {
   currentPage = 1;
     currentQuery = searchQuery;
 
-//   const data = await fetchImages(searchQuery, currentPage);
+  const data = await fetchImages(searchQuery, currentPage);
   if (data.hits.length === 0) {
     Notify.failure("Sorry, there are no images matching your search query. Please try again.");
   } else {

@@ -9,14 +9,14 @@ const loadMoreBtn = document.querySelector('.load-more');
 const searchForm = document.getElementById('search-form');
 
 loadMoreBtn.style.display = "none";
-// let currentPage = 1;
-// let currentQuery = '';
-// let totalHits = 0;
-
+let currentPage = 1;
+let currentQuery = '';
+let totalHits = 0;
+gallery.innerHTML = ""
 function renderImages(images) {
-
-  const markup = images
-    .map((image) => {
+  
+    const markup = images
+        .map((image) => {
       return `
         <div class="photo-card">
           <a href="${image.largeImageURL}">
@@ -38,7 +38,8 @@ function renderImages(images) {
   } else {
     loadMoreBtn.style.display = 'none';
   }
-  lightbox.refresh();
+
+    lightbox.refresh();
 }
 
 function showMessage(message, gallery) {
@@ -58,12 +59,16 @@ async function loadImages(query, page) {
   }
 }
 
+function clearGallery() {
+  gallery.innerHTML = '';
+}
 const searchBtn = document.querySelector('.search-btn');
 searchBtn.addEventListener('click', async function () {
   const searchQuery = searchForm.searchQuery.value.trim();
   if (!searchQuery) return;
   currentPage = 1;
-  currentQuery = searchQuery;
+    currentQuery = searchQuery;
+    clearGallery();
   const data = await fetchImages(searchQuery, currentPage);
 totalHits = data.totalHits;
     renderImages(data.hits);
