@@ -1,6 +1,6 @@
 import Notiflix, { Notify } from 'notiflix';
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+// import SimpleLightbox from 'simplelightbox';
+// import 'simplelightbox/dist/simple-lightbox.min.css';
 import { renderImages, showMessage, loadImages} from './ui';
 import { fetchImages } from './api';
 
@@ -12,7 +12,7 @@ Notiflix.Notify.init({
   position: 'right-top',
   timeout: 3000,
 });
-const lightbox = new SimpleLightbox('.gallery a');
+// const lightbox = new SimpleLightbox('.gallery a');
 let currentPage = 1;
 let currentQuery = '';
 let totalHits = 0;

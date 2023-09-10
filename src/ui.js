@@ -14,7 +14,7 @@ let currentQuery = '';
 let totalHits = 0;
 
 function renderImages(images) {
-  gallery.innerHTML = '';
+//   gallery.innerHTML = '';
   const markup = images
     .map((image) => {
       return `
@@ -64,7 +64,6 @@ searchBtn.addEventListener('click', async function () {
   currentPage = 1;
   currentQuery = searchQuery;
   const data = await fetchImages(searchQuery, currentPage);
-
      totalHits = data.totalHits;
     renderImages(data.hits);
 });
