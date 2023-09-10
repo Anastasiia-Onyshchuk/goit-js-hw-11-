@@ -48,13 +48,13 @@ function showMessage(message, gallery) {
 }
 
 async function loadImages(query, page) {
-  const data = await fetchImages(query, page);
-  if (data.hits.length === 0) {
+  const currentData = await fetchImages(query, page);
+  if (currentData.hits.length === 0) {
     loadMoreBtn.style.display = 'none';
     showMessage("We're sorry, but you've reached the end of search results.");
   } else {
-      totalHits = data.totalHits;
-      renderImages(data.hits);
+      totalHits = currentData.totalHits;
+      renderImages(currentData.hits);
       loadMoreBtn.style.display = 'block';
   }
 }
