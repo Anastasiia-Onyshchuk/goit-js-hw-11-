@@ -14,7 +14,7 @@ let currentQuery = '';
 let totalHits = 0;
 
 function renderImages(images) {
-//   gallery.innerHTML = '';
+
   const markup = images
     .map((image) => {
       return `
