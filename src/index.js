@@ -12,10 +12,10 @@ Notiflix.Notify.init({
   position: 'right-top',
   timeout: 3000,
 });
-// const lightbox = new SimpleLightbox('.gallery a');
-// let currentPage = 1;
-// let currentQuery = '';
-// let totalHits = 0;
+const lightbox = new SimpleLightbox('.gallery a');
+let currentPage = 1;
+let currentQuery = '';
+let totalHits = 0;
 
 
 searchForm.addEventListener('submit', async function (e) {
