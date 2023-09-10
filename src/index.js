@@ -24,13 +24,13 @@ searchForm.addEventListener('submit', async function (e) {
   if (!searchQuery) return;
   currentPage = 1;
   currentQuery = searchQuery;
-//   const data = await fetchImages(searchQuery, currentPage);
-//   if (data.hits.length === 0) {
-//     Notify.failure("Sorry, there are no images matching your search query. Please try again.");
-//   } else {
-//     totalHits = data.totalHits;
-//     renderImages(data.hits);
-//   }
+  const data = await fetchImages(searchQuery, currentPage);
+  if (data.hits.length === 0) {
+    Notify.failure("Sorry, there are no images matching your search query. Please try again.");
+  } else {
+    totalHits = data.totalHits;
+    renderImages(data.hits);
+  }
 });
 loadMoreBtn.addEventListener('click', async function () {
   currentPage++;

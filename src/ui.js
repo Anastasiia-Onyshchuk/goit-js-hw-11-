@@ -63,8 +63,8 @@ searchBtn.addEventListener('click', async function () {
   if (!searchQuery) return;
   currentPage = 1;
   currentQuery = searchQuery;
-  const data = await fetchImages(searchQuery, currentPage);
-     totalHits = data.totalHits;
-    renderImages(data.hits);
+//   const data = await fetchImages(searchQuery, currentPage);
+    //  totalHits = data.totalHits;
+    // renderImages(data.hits);
 });
 export { renderImages, showMessage, loadImages };
